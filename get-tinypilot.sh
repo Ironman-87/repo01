@@ -83,10 +83,10 @@ INSTALLER_DIR='/mnt/tinypilot-installer'
 
 # Remove temporary files & directories.
 clean_up() {
-  # sudo umount --lazy "${INSTALLER_DIR}" || true
-  # sudo rm -rf \
-  #  "${LEGACY_INSTALLER_DIR}" \
-  #  "${INSTALLER_DIR}"
+  sudo umount --lazy "${INSTALLER_DIR}" || true
+  sudo rm -rf \
+   "${LEGACY_INSTALLER_DIR}" \
+   "${INSTALLER_DIR}"
 }
 
 # Always clean up before exiting.
