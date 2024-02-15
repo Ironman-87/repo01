@@ -90,7 +90,7 @@ INSTALLER_DIR='/mnt/tinypilot-installer'
 #}
 
 # Always clean up before exiting.
-trap 'clean_up' EXIT
+# trap 'clean_up' EXIT
 
 # Determine the installation directory. Use RAMdisk if there is enough memory,
 # otherwise, fall back to regular disk.
