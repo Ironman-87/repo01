@@ -82,12 +82,12 @@ readonly AVAILABLE_MEMORY_MIB
 INSTALLER_DIR='/mnt/tinypilot-installer'
 
 # Remove temporary files & directories.
-clean_up() {
-  sudo umount --lazy "${INSTALLER_DIR}" || true
-  sudo rm -rf \
-   "${LEGACY_INSTALLER_DIR}" \
-   "${INSTALLER_DIR}"
-}
+#clean_up() {
+#  sudo umount --lazy "${INSTALLER_DIR}" || true
+#  sudo rm -rf \
+#   "${LEGACY_INSTALLER_DIR}" \
+#   "${INSTALLER_DIR}"
+#}
 
 # Always clean up before exiting.
 trap 'clean_up' EXIT
